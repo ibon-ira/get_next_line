@@ -6,7 +6,7 @@
 /*   By: iboiraza <iboiraza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/01 16:47:45 by iboiraza          #+#    #+#             */
-/*   Updated: 2024/04/16 18:37:48 by iboiraza         ###   ########.fr       */
+/*   Updated: 2024/07/24 17:22:14 by iboiraza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -99,7 +99,7 @@ char	*get_next_line(int fd)
 	char			*next_line;
 	t_list			*tmp;
 
-	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, &next_line, 0) < 0)
+	if (fd < 0 || BUFFER_SIZE <= 0)
 	{
 		if (list != NULL)
 		{
@@ -120,26 +120,11 @@ char	*get_next_line(int fd)
 	return (ft_clean_list(&list), next_line);
 }
 /*
-int	main()
-{
-	int		fd;
-//	char	buf[15];
-//	int		chars_read;
-
-	fd = open("file.txt", O_RDONLY);
-	printf("%s", get_next_line(fd));
-//	while ((chars_read = read(fd, buf, 5)))
-	{
-		buf[chars_read] = '\0';
-		printf("buf %s\n", buf);
-	}
-}*/
-/*
+#include <stdio.h>
 int	main(void)
 	{
 	int	fd;
 
-	//fd = open("1char.txt", O_RDONLY );
 	fd = open("file.txt", O_RDONLY);
 	printf("FD=>%d\n", fd);
 	printf("LINEA1=>%s", get_next_line(fd));

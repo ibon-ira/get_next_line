@@ -6,7 +6,7 @@
 /*   By: iboiraza <iboiraza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/01 16:51:47 by iboiraza          #+#    #+#             */
-/*   Updated: 2024/04/16 16:43:36 by iboiraza         ###   ########.fr       */
+/*   Updated: 2024/07/24 17:22:24 by iboiraza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@
 #  define BUFFER_SIZE 42
 # endif
 
-# include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
